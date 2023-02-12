@@ -1,9 +1,9 @@
---x_path /home/rui/work/prob-regression-model/data/2022-10-08/x.npy
---yhat_path /home/rui/work/prob-regression-model/data/2022-10-08/yhat.npy
+--x_path /home/rzuo02/work/probility-regression/data/2023-02-11/train/x.npy
+--yhat_path /home/rzuo02/work/probility-regression/data/2023-02-11/train/yhat.npy
 --batch_size 16
 --split_ratio 0.9
 --lr 0.0001
 --epochs 5000
---checkpoint_dir /home/rui/work/prob-regression-model/data/2022-10-08/check_points
+--checkpoint_dir /home/rzuo02/work/probility-regression/data/2023-02-11/check_points
 --lr_gamma 0.5
---device_index 3
+--device_index 0 

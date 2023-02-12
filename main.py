@@ -61,7 +61,7 @@ def train(model, train_loader, device, optimizer, criterion, epoch):
 
         y = model(x)
 
-        loss = criterion(y, yhat.data)
+        loss = criterion(y, yhat)
 
         loss.backward()
 
@@ -98,7 +98,7 @@ def main():
     model = ProbModel()
 
     with open(args.checkpoint_dir + '/model_arch.txt', 'w+') as f:
-        f.write(str(summary(model, input_size=(10, 1), device='cpu')))
+        f.write(str(summary(model, input_size=(1024, 2), device='cpu')))
 
     if args.load_from_main_checkpoint:
         print('=' * 50 + "load check point" + '=' * 50)
