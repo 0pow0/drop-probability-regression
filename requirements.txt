@@ -1,0 +1,8 @@
+matplotlib
+natsort
+numpy
+pandas
+scipy
+torch
+torchinfo
+tqdm
